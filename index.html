@@ -4,32 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
     <div class="main">
         <form class="form">
-            <input type="number" class="bill" placeholder="insert">
+            <label for="input">bill</label>
+            <input type="number" class="bill" placeholder="$">
 
-            <input type="submit" value="5" class="btn">
-            <input type="submit" value="10" class="btn">
-            <input type="submit" value="15" class="btn">
-            <input type="submit" value="25" class="btn">
-            <input type="submit" value="50" class="btn">
+            <label for="input">select tip %</label>
+            <div class="row">
+                <input type="submit" value="5" class="btn">
+                <input type="submit" value="10" class="btn">
+                <input type="submit" value="15" class="btn">
+            </div>
 
-            <input type="number" class="people" placeholder="number of people">
+            <div class="row">
+                <input type="submit" value="25" class="btn">
+                <input type="submit" value="50" class="btn">
+            </div>
+
+            <label for="input">number of people</label>
+            <input type="number" class="people">
         </form>
 
         <div class="res">
-            <p class="text">tip amount</p>
-            <div class="tip"></div>
+            <div class="row-text">
+                <p class="text">tip amount</p>
+                <div class="tip-text"></div>
+            </div>
 
-            <p class="text">total</p>
-            <div class="total"></div>
-
+            <div class="row-text">
+                <p class="text">total</p>
+                <div class="total-text"></div>
+            </div>
         </div>
     </div>
-    
+
     <!-- SCRIPT LINKS -->
     <script src="app.js"></script>
 </body>

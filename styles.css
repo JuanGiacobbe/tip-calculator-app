@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    padding: 20px;
+}
+label{
+    font-size: 18px;
+    margin: 20px 0 15px 0;
+    text-transform: capitalize;
+}
+input{
+    padding: 10px;
+    font-size: 24px;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 10px;
+    border:none;
+    text-align: right;
+    font-weight: 700;
+}
+input::placeholder{
+    text-align: start;
+}
+
+.btn{
+    width: 30%;
+    text-align: center;
+    cursor: pointer;
+    background-color: hsl(183, 100%, 15%);
+    margin-bottom: 10px;
+    color: hsl(185, 41%, 84%);
+}
+.btn.active{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.res{
+    width: 48%;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    height: 65vh;
+}
+
+.row-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border: 2px solid red;
+}
+.text{
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+    text-transform: capitalize;
+}
